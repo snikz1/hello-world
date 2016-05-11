@@ -2,8 +2,6 @@ var crypto = require('crypto');
 
 var mongoose = require('mongoose');
 
-
-
 var Schema = mongoose.Schema;
 
 var schema = new Schema({
@@ -37,7 +35,9 @@ schema.virtual('password')
         return this._plainPassword;
     });
 schema.methods.checkPassword = function (password) {
-    return this.encryptPassword(password) === this.hashPassword;
+    // return this.encryptPassword(password) === this.hashPassword;
+    return this.encryptPassword(password);
 };
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/test1');
+
 exports.User = mongoose.model('User', schema);

@@ -9,12 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.1",
     "config": "^1.20.1",
+    "connect-flash": "^0.1.1",
     "consolidate": "^0.14.1",
     "crypto": "0.0.3",
     "express": "^4.13.4",
     "mongoose": "^4.4.16",
     "node-dev": "^3.1.1",
+    "nodedev": "0.0.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "swig": "^1.4.2"
   }
 }
